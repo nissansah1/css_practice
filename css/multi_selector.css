@@ -1,0 +1,24 @@
+/* [use multi (hybrid) selector like tag,id,class in oneline css */
+.first_heading_class,
+#first_heading1,
+#first_heading2 {
+    background-color: aquamarine;
+}
+
+/* decendent selector -apply like parent>>child*/
+.decendent_class p p,
+.decendent_class p,
+.decendent_class pre,
+.decendent_class h4 {
+    color: blue;
+}
+
+/* parent id,class - apply to all child tag */
+.check_div_with_id_child_impact{
+    background-color: red;
+}
+
+/* parent id,class - apply to all child tag */
+.check_div_with_class_child_impact{
+    color:red;
+}

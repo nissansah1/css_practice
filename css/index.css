@@ -1,0 +1,35 @@
+/* for tag-element selector  */
+h1 {
+    color: lightsalmon;
+    /*foreground color*/
+}
+
+/* for html tag-without any symbol*/
+pre {
+    color: purple;
+}
+
+/* * star used f0r universal selector -apply for all one*/
+* {
+    background-color: rgb(255, 255, 255);
+}
+
+/* # USE TO denote id selector*/
+#firstid1 {
+    background-color: lightseagreen;
+}
+
+#firstid2 {
+    color: orange;
+}
+
+/* . USE TO denote class` selector*/
+.firstClass1 {
+    color: rgb(245, 11, 11);
+    font-style: italic;
+    background-color: blueviolet;
+}
+
+a {
+    background-color: lightgreen;
+}

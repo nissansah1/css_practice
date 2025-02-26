@@ -1,0 +1,102 @@
+/* *{
+    text-decoration-color: aliceblue;
+    background-color: black;
+} */
+
+/* Text-Align Property
+16. Text-Decoration Property
+17. Text-Transform Property
+18. Line-Height Property
+19. Font Properties
+20. Font Family
+21. Icon using fonts
+ninja ( color
+visibility:hidde */
+
+.box {
+    height: 150px;
+    width: 150px;
+    line-height: 70px;
+}
+
+#text_allign_1 {
+    background-color: rgb(219, 172, 110);
+    text-align: left;
+    /* test -align means test alignment(where placed) */
+}
+
+#text_allign_2 {
+    background-color: aqua;
+    text-align: center;
+    /* used for horizontal align */
+}
+
+#text_allign_3 {
+    background-color: rgb(165, 105, 222);
+    text-align: right;
+    /* used for apperence od inline text */
+}
+
+#text_decoration_1 {
+    text-decoration: underline;
+    /* Added underline as default*/
+    /* commonly used toremove uncerlines from hyperlink  */
+}
+
+#text_decoration_2 {
+    text-decoration: underline dotted;
+    /* underline must be used for visibility line then you can change  */
+}
+
+#text_decoration_3 {
+    text-decoration: underline double;
+    font-style: italic;
+    /* font style is used to look style link bold,italic etc */
+}
+
+#text_decoration_4 {
+    text-decoration: underline 5px;
+    /* line height give you space between above and below text [vertical spacing]*/
+}
+
+#text_decoration_5 {
+    text-decoration: overline;
+    text-decoration-color: red;
+    /* used for text decoration changes color filled  */
+    text-decoration-style: dashed;
+    /* used for text deco-style  */
+
+}
+
+#text_decoration_6 {
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-size: 40px;
+    /*  font size is used to give size of font*/
+}
+
+#text_decoration_7 {
+    text-decoration: line-through;
+    text-decoration: wavy;
+    font-weight: 600;
+    /* font weight is used for boldness of text */
+}
+
+#link {
+    text-decoration: none;
+    /* commonly used toremove uncerlines from hyperlink 
+     */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font family is used to writing style  */
+    /* multi font is used when first only is not applicable on that browser  */
+}
+
+.sigmar-regular {
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-style: normal;
+    /*googel font link  */
+}
+
+
+/* fontawesome sit0s is also used to get icon  */

@@ -1,0 +1,53 @@
+format:-
+
+**inline styling** <priority 1>
+apply style in inside html tag
+ 
+ <tag style="property_key: value;" >content </tag>
+
+
+**blocking (in html) styling** <priority 2>
+ <style>
+    selector{
+    property_key: value;
+    }
+</style>
+
+
+** external styling ** <prority 3>
+ selector{
+    property_key: value;
+   }
+
+
+
+** ground **
+foreground <color> - for front <color> 
+background <color> -  for back <color>
+
+* id attribute key:value must be unique for each
+* class attribute key:value must be common for parent >>all child class <<
+
+for id selecting , we use # symbol to denote
+   #    selector{
+            property_key: value;
+      }
+
+using #with text can convert into div with id 
+eg:- #firstid1 --> <div id="firstid1"> 
+
+
+id css is more priority 
+than
+class css is less prority
+
+define class as a common is every tag to apply 
+
+use multi selector like tag,id,class
+or
+use multi hybrid selector like tag,id,class
+
+
+Aapki HTML structure galat hai, <h4> tag directly <p> tag ke andar nested nahi ho sakti hai kyunki woh ek block-level element hai, aur<p> sirf inline elements ko contain karta hai.
+
+pixel is the smallest unit - depend upon device little small ,tiny small 
