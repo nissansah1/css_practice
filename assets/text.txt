@@ -69,6 +69,6 @@ git push second time
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https: //github.com/nissansah1/css_practice.git
+git remote add origin https://github.com/nissansah1/css_practice.git
 git push -u origin main
 }
