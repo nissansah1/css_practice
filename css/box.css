@@ -1,0 +1,253 @@
+/* when you hower through you get inner blue and outer orange box part 
+where blue part is - content part 
+and orange part is - margin part  */
+
+/* 
+box model 
+height 
+width
+Border
+padding 
+Margin
+ */
+
+/* these all can effect in only invisible box only  - make visiolbe by set bg-color*/
+
+/* hiight - vertical space occupy from content
+ width -horizontal space occupy from content 
+ padding  - extra space around content
+ border - outer line that cover box
+ Margin - gap between two box   */
+
+
+#console_clear {
+    display: none;
+    /* background-color: white; */
+}
+
+#test_height {
+    background-color: lightblue;
+    height: 200px;
+    /* 
+        now you can see the gap bcz of invisible box height  */
+}
+
+#test_width {
+    background-color: antiquewhite;
+    width: 250px;
+}
+
+#shraddha_prac_heading {
+    height: 50px;
+    width: 200px;
+    background-color: lightpink;
+}
+
+/*  border - used to set the  outer layer line 
+
+border-width - used to define the width(horizontal ) outlier line 
+border-style : solid /dotted/dashed etc 
+border-color - set the outlier liner color 
+ 
+ */
+
+/* border  */
+#set_border_info {
+    height: 50px;
+    width: 300px;
+
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+#set_border_info_one {
+    background-color: lightgray;
+    height: 150px;
+    width: 750px;
+
+    border-width: 3px;
+    /* used to set the width(vertical bold/thickness) of the outer line   */
+    border-color: rgb(13, 219, 151);
+    /* used to set the outline border color - for visualy represent  */
+    border-style: double;
+    /* without border style - it impossible to visually the border  bcz it set the "which type of border frame you want   */
+}
+
+#set_border_info_two {
+    height: 15opx;
+    width: 400px;
+    background-color: rgb(182, 146, 146);
+    text-align: center;
+    /* text-align is work within that box width - means "center" is between box only , not whole width page */
+
+    border-width: 5px;
+    border-style: dotted;
+    border-color: rgb(105, 80, 220)
+}
+
+#set_border_info_shorthand {
+    height: 150px;
+    width: 400px;
+
+    border: 2px solid orange;
+    /*eg: - border: width style color
+    
+    here is in morder of shorthand  
+    border-width: XX px
+    border-style:xxxxxx
+    border-color: rgb(xx ,xx ,xx) 
+    */
+}
+
+/* border radius is used to make box rect - into box corner , box circle 
+
+radius means (left-top, right-top ,right-buttom , left-buttom ) corner
+, four side of box 
+
+and also after, border-radius applied means all four corner side applied */
+
+.box_corner {
+    /* set common for all corner box  */
+    background-color: lightpink;
+    text-align: center;
+}
+
+#border_radius_corner_set_box1 {
+    width: 400px;
+    /* set width(horizonntal) of box */
+    height: 100px;
+    /* set height(vertical) of box */
+    border-radius: 20px;
+    /* border-radius is used to make box as a corner or circle */
+}
+
+#border_radius_circle_set_box2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 180px;
+    /* set by px value */
+}
+
+#border_radius_corner_set_box3 {
+    height: 100px;
+    width: 250px;
+
+    border-radius: 20%;
+}
+
+/* padding - gap between actual content and border 
+= padding-left means gap beteen left to content
+= padding-right -right  means gap between right to content
+= padding-top- top means gap beteen topto content
+= padding-bottom -bottom means gap beteen bottom to content
+ */
+
+.padd_gap,
+#padding_shorthand,
+#padding_all {
+    background-color: lightgreen;
+    height: 80px;
+    width: 350px;
+}
+
+#padding_one {
+    padding-left: 50px;
+    /* gap from left */
+}
+
+#padding_two {
+    padding-right: 20px;
+    /* gap from right to content */
+}
+
+#padding_three {
+    padding-top: 20px;
+    /* gap from top to content  */
+}
+
+#padding_four {
+    padding: 30px;
+    /* in padding - it give all side equal gap from content  */
+}
+
+#padding_five {
+    padding-bottom: 30px;
+    /* now this is gap from bottom to actual content */
+}
+
+#padding_shorthand {
+    padding: 1px 2px 3px 4px;
+    /* padding:top|right|bottom|left*/
+    /*-- it use clockwise way storing the shorthand value  */
+}
+
+#padding_all {
+    padding: 50px;
+    /* this apply in all side gap between invisible gap to actual content  */
+}
+
+/* margin - gap between two actual content box (different box ) 
+
+types of margin css style apply 
+-margin -right 
+-margin-left
+-margin-top
+-margin-bottom
+
+-remember without margin -- top and buttom box are close (100% close) 
+
+- margin take all gap in (in-block tag and also idk for another ) to make margin gap satisfied that what you written in css from between two actual content box  
+*/
+
+.margin {
+    background-color: aqua;
+    height: 80px;
+    width: 600px;
+}
+
+#margin_top {
+    margin-top: 60px;
+    /* it take invisibe gap from top to the beteen above one  actual content 
+    
+    -it work like br tag gap between top and bottom box content*/
+}
+
+#margin_left {
+    margin-left: 90px;
+    /* it take invisibe gap from left  to the beteen right one  actual content/by default_start_browser_block */
+}
+
+#margin_bottom {
+    margin-bottom: 20px;
+    /* it take invisibe gap from bottom to the beteen bottom one  actual content/by default_last_browser_block
+
+    -it work like br tag gap between top and bottom between box content */
+}
+
+#margin_right {
+    margin-right: 30px;
+    /* it take invisibe gap from rihgt to the beteen another right one actual content/by default_right_last_browser_block */
+
+    /* - by default margin fileed from right side bcz that part in empty for webasite so,it take that all part to right side */
+}
+
+#margin_shorthand {
+    margin: 20px 40px 60px 80px;
+    /* it take top|right|bottom|left*/
+    /*-- it use clockwise way storing the shorthand value  */
+}
+
+#margin_all {
+    padding: 10px 20px 3px 4px;
+    /* padding from four sided mannually - give gave betweeb border and actual content   */
+
+    margin: 40px;
+    /* give all side eyqall gap betewn all side between another  ALL box */
+
+}
+
+/* remember 
+pading is used to give gap internally to content 
+-margin is used to give gap between two  content  box */

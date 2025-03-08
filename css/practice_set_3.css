@@ -1,0 +1,53 @@
+#console_clear {
+    display: none;
+}
+
+
+#q1 {
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border-radius: 50px;
+
+}
+
+/*
+eg:- border: 2px solid black;
+remenber-  to appear border give pixle border-style  and color as a short hand */
+
+
+/* idfk red light kasie nische karna hai black colover p[arent div se  */
+.traffic_light {
+    background-color: rgb(46, 39, 39);
+    height: 350px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+
+
+#traffic_red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+
+#traffic_yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 20px auto;
+    /* auto means from all side this px apply  */
+}
+
+#traffic_green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 20px auto;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text_property</title>
+    <link rel="stylesheet" href="/css/box.css">
+</head>
+
+<body>
+    <!-- <div id="console_clear"> -->
+    <h1 id="test_height">testing to height ,now you can see the gap bcz of invisible box height set to 200px by nj
+        note
+        :- it width storage full then it exceed from box</h1>
+
+
+    <a href="/html/practice_set_3.html"><button style=" background-color: rgb(93, 89, 125);">practice set 3
+        </button></a>
+
+
+    <hr>
+    <h1 id="test_width">test of width - bcz of short width ,it adjust under box - if text exeed than box increase
+        height
+        repidly --- width:250px </h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore adipisci quae unde eos consectetur a
+        fugit
+        voluptatum sunt architecto iste!</p>
+
+    <hr>
+
+    <h1 id="shraddha_prac_heading">heading </h1>
+
+    <hr>
+    <img src="/assets/Screenshot 2025-03-02 030111.png" alt="images of box" height="150px">
+
+    <hr>
+
+
+    <button>Click me </button>
+
+    <hr>
+    <div id="set_border_info">set border width , style and etc , color , for today this much only >>>> eg
+        border-width:
+        2px;
+        border-color: black;
+        border-style: solid;
+        }</div>
+
+    <br><br>
+
+    <div id="set_border_info_one">set new value of border info where ----
+        <pre>border-width: 3px;
+    /* used to set the width(vertical bold/thickness) of the outer line */
+    border-color: rgb(13, 219, 151);
+    /* used to set the outline border color - for visualy represent */
+    border-style: double;
+    /* without border style - it impossible to visually the border bcz it set the "which type of border frame you want */</pre>
+    </div>
+    <br><br>
+
+
+
+    <div id="set_border_info_two"> set _order_info_two with extra imformation
+        <pre>height:15opx;
+    width:400px;
+    background-color:rgb(182, 146, 146);
+    text-align: center;</pre>
+        <p>/* text-align is work within that box width - means "center" is between box only , not whole width page
+            */
+        </p>
+        <pre>border-width:5px;
+        border-style:dotted;
+        border-color:rgb(105, 80, 220)</pre>
+    </div>
+
+    <br><br>
+
+    <div id="set_border_info_shorthand">set_border_info_shorthand
+        <pre>/*eg: - border: width style color
+        
+        here is in morder of shorthand
+        border-width: XX px
+        border-style:xxxxxx
+        border-color: rgb(xx ,xx ,xx)
+        */</pre>
+    </div>
+    <br><br>
+    <hr>
+
+    <div class="box_corner" id="border_radius_corner_set_box1">
+        border_radius_corner_set_one
+    </div>
+    <br>
+    <div class="box_corner" id="border_radius_circle_set_box2">border_radius_circle_set_box_two >>
+        width: 300px;
+        height: 300px;
+        border-radius: 180px;
+
+    </div>
+
+    <br>
+    <div class="box_corner" id="border_radius_corner_set_box3">border_radius_corner_set_box_three</div>
+    <br><br>
+
+    <hr>
+    <pre>/* padding - gap between actual content and border
+    = padding-left means gap beteen left to content
+    = padding-right -right means gap between right to content
+    = padding-top- top means gap beteen topto content
+    = padding-bottom -bottom means gap beteen bottom to content
+    */</pre>
+
+    <pre style="background-color:lightseagreen; width:200px;">where common class 
+    background-color: lightgreen;
+    height: 80px;
+    width: 350px;</pre>
+
+    <div class="padd_gap" id="padding_one">gap btwn content to border-padding_one
+        <pre>where padding-left: 50px;
+    /* gap from left */</pre>
+    </div>
+    <br>
+
+    <div class="padd_gap" id=" padding_two">gap btwn content to border-padding_two
+        <pre>padding-right:20px;
+        /* gap from right to content */</pre>
+    </div>
+    <br>
+
+    <div class="padd_gap" id="padding_three">gap btwn content to border-padding_three
+        <pre>where padding-top: 20px;
+    /* gap from top to content */</pre>
+    </div>
+    <br>
+
+    <div class="padd_gap" id="padding_four">gap btwn content to border-padding_four
+        <pre> where padding: 30px;
+    /* in padding - it give all side equal gap from content */</pre>
+    </div>
+    <br>
+
+
+    <div class="padd_gap" id="padding_five">gap btwn content to border-padding_five
+        <pre>where padding-bottom: 30px;
+        /* now this is gap from bottom to actual content */</pre>
+    </div>
+
+    <br>
+    <div id="padding_shorthand">padding_shorthand where
+        <pre>padding: 1px 2px 3px 4px;
+    /* padding:top|right|bottom|left --clockwise way <br> storing the shorthand value</pre>
+    </div>
+    <br>
+    <div id="padding_all">when value of padding is single then it apply in four sides where padding : 50 px;</div>
+
+    <br>
+    <hr>
+
+    <div>margin means gap berween two actual content box
+        <pre>types of margin css style apply
+    -margin -right
+    -margin-left
+    -margin-top
+    -margin-bottom*</pre>
+    </div>
+
+    <div class="margin" id="margin_top">mrgin from top pre/* it take invisibe gap from top to the beteen above one
+        actual content
+
+        -it work like br tag gap between top and bottom box content*/</div>
+
+
+    <div class="margin" id="margin_left">margin from left means gap from left fi actual two content box
+        <pre>/* it take invisibe gap from left to the beteen right one actual content/by default_start_browser_block */</pre>
+    </div>
+
+    <div class="margin" id="margin_bottom">margin form bottom means gap from bottom to actual two content box
+        <pre>/* it take invisibe gap from bottom to the beteen bottom one actual content/by default_last_browser_block
+    -it work like br tag gap between top and bottom between box content */</pre>
+    </div>
+
+
+    <div class="margin" id="margin_right ">margin form right means gap from right to actual two content box
+        <pre>/* it take invisibe gap from rihgt to the beteen another right one actual content/by default_right_last_browser_block */
+    /* - by default margin fileed from right side bcz that part in empty for webasite so,it take that all part to right side
+    */</pre>
+    </div>
+
+
+    <div class="margin" id="margin_shorthand">margin form ( four diff side ..mannually..) means gap from bottom to
+        actual two content
+        box
+        <pre>margin: 20px 40px 60px 80px;
+    /* it take top|right|bottom|left*/
+    /*-- it use clockwise way storing the shorthand value */</pre>
+    </div>
+
+
+    <div class="margin" id="margin_all">margin form all side equally means gap from bottom to actual two content box
+        <pre>padding:40%;
+    /* padding from four sided equally */</pre>
+    </div>
+    <hr>
+
+    console.clear()
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

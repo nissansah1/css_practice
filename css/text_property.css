@@ -13,6 +13,9 @@
 ninja ( color
 visibility:hidde */
 
+
+/* text-align:left/center/right; */
+/* text-decoration:underline/overline/linethrough; */
 .box {
     height: 150px;
     width: 150px;
@@ -100,3 +103,204 @@ visibility:hidde */
 
 
 /* fontawesome sit0s is also used to get icon  */
+
+#link {
+    text-decoration: none;
+    /* used to remove line from link */
+}
+
+#text_decoration_underline {
+    text-decoration: red wavy underline;
+}
+
+#text_decoration_dotted {
+    text-decoration: gray dotted overline;
+
+    /* first color >> decoration >>type_of_line */
+
+}
+
+#normal {
+    font-weight: normal;
+    /* same as normal as it is  */
+}
+
+#bold {
+    font-weight: bold;
+    /* represent font text as bold  */
+}
+
+#bolder {
+    font-weight: bolder;
+    /* represent more bolder than bold of this text*/
+}
+
+#font-weight {
+    font-weight: lighter;
+    /* text thickness is lighter than normal text */
+}
+
+#range_120 {
+    font-weight: 120px;
+    /* now it set through px amount of text thickness  */
+}
+
+#range_580 {
+    font-weight: 580px;
+}
+
+#lighter {
+    font-weight: lighter;
+
+}
+
+/* font-weight: normal/bold/bolder/lighter ;
+or 
+font-weight: 100-900; //range of boldness
+
+you can make text light to bold 
+
+mostly used for reverse the boldness and lightness from h1 and p tag */
+
+
+#text_align_left {
+    text-align: left;
+    /* shift the content in lrft side inititative */
+}
+
+#text_align_center {
+    text-align: center;
+    /* shift the text content from center side initiative */
+}
+
+#text_align_right {
+    text-align: right;
+    /* now text start from right side - like urdu writing */
+}
+
+
+/* font-famliy mostly used multi style of writing style bcz if one not work then another work */
+#font_1 {
+    font-family: italic;
+    /* this is the italic font style */
+}
+
+#font_2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#font_3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* font-family is used to determine the writing style of letter like in real life  */
+
+#font_4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#font_5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#font_6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#font_7 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* unit means size eg
+96px = 1 inch = 2.54 cm  
+means 96 pixel is equal to 1 inch  
+
+also  you can measure /define size in cm /mm/inch but mostly used is px */
+
+#size_1 {
+    font-size: 25px;
+    /* change the size of font through unit */
+}
+
+#size_2 {
+    font-size: 5px;
+    /* remenber normal pixel is 16px */
+}
+
+#size_3 {
+    font-size: large;
+    /* change the font size through word */
+}
+
+#size_4 {
+    font-size: x-large
+}
+
+#size_5 {
+    font-size: 4cqmax
+}
+
+#line_height_1 {
+    line-height: 0px;
+}
+
+#line_height_2 {
+    line-height: 2px;
+}
+
+#line_height_3 {
+    line-height: 50px;
+}
+
+#line_height_4 {
+    line-height: 80px;
+}
+
+#line_height_5 {
+    line-height: normal;
+}
+
+/* text transform is used to convert case-sesetive word/sentences  */
+#text_transform_uppercase {
+    text-transform: uppercase;
+    /* make all case as uppercase */
+}
+
+#text_transform_lowercasecase {
+    text-transform: lowercase;
+    /* make all case as lowercase */
+
+}
+
+#text_transform_capitalize {
+    text-transform: capitalize;
+    /* make first letter capital */
+}
+
+#text_transform_none {
+    text-transform: none;
+    /* no any case apply - jaisa hai waisa he xordo */
+}
+
+#pr_2_q1_header {
+    text-align: center;
+}
+
+#pr_2_q1_p {
+    text-transform: capitalize; //all word capitalize
+}
+
+#pr_2_qn2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#outer_first_one {
+    font-size: 25px;
+}
+/* insome tag - outer changes can also effect same as in inner tag  */
+
+#inner_second_one {
+    font-size: 10px;
+}

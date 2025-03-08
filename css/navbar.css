@@ -1,0 +1,54 @@
+/*  in big tech companies , even small changes takes more time duer to many reason ... justs google  it  */
+
+
+/* in big big companies , the set universial margin and padding as zero */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* because of many time mangin and paddiing have to set again and again , that way seniour ddeveloper set it in zero as bydefault  */
+
+#navbar {
+    height: 60px;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    /* remove line from anchor tag */
+    color: white;
+    /* color -- is used to give the color of text */
+}
+
+#amazon,
+#account,
+#My_cart,
+#contact_us {
+    margin-right: 13%;
+    /* two contrent box differnce gap from right side */
+
+}
+
+#amazon,
+#account,
+#My_cart,
+#contact_us,
+#search,
+#search_box {
+    margin-top: 20px;
+    /* margin -top :- give gap beteen abouve border and this id */
+}
+
+#search {
+    background-color: rgb(219, 219, 16);
+}
+
+#amazon {
+    color: yellow;
+    font-size: 18px;
+
+}
+
+/* here is the problem that -- eith change of borwer ratio it doesn't change */

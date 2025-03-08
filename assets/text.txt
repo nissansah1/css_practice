@@ -51,3 +51,24 @@ use multi hybrid selector like tag,id,class
 Aapki HTML structure galat hai, <h4> tag directly <p> tag ke andar nested nahi ho sakti hai kyunki woh ek block-level element hai, aur<p> sirf inline elements ko contain karta hai.
 
 pixel is the smallest unit - depend upon device little small ,tiny small 
+
+use mdn websites for html css and js 
+
+listen all points, word and sentences of mentoe carefully and inplement /apply it 
+bcz s/he is professional than you !!!
+
+in absolute unit - we mostly use px
+
+css is more complecated blc it make confuse >>>
+when you do code 
+use dfa concept in paper pen and then apply needed to connected path 
+
+
+git push second time
+{
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https: //github.com/nissansah1/css_practice.git
+git push -u origin main
+}
