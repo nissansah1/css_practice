@@ -14,7 +14,7 @@
     height: 40px;
     width: 40px;
         margin:0px;      
-      /*margin means extra outer layer invisible space  */
+      /*margin means extra outer layer, invisible space  */
     padding: 0px; 
       /*it remove actual extra visible layer from that tag  */
 
