@@ -1,0 +1,58 @@
+#image1,
+#cover,
+#contain,
+#auto,
+#contain_no_repeat {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#image1 {
+    background-image: url("/assets/gwen.jpeg");
+    /* background-image is used to give background image 
+        
+    background-image:url("path/url");   pattern observer
+    
+    rememnber sirf image dene se nahi hota hai ...unko aache se bg-image-size ko filzed karna parta hai warna ,pic large pe aayga ,ramdomly size
+    eg:= thats way use 
+    background-image: cover/contain /auto */
+}
+
+#cover {
+    background-image: url("/assets/1.jpg");
+    background-size: cover;
+    /* cover- means capture all area without any empty space ,- mtlb jitna image fit aaraha hai fit kardo- without make photo perfectly completely in size of height and weidth , make photo imlagrge to fit*/
+}
+
+/* moslty we use cover rather than auto and contain */
+
+
+/* contain  is used to fit an image in that container , if image is filled then it repeat to fill the extra space  */
+#contain {
+    background-image: url("/assets/2.jpg");
+    background-size: contain;
+}
+
+#contain_no_repeat {
+    background-image: url("/assets/3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* bg-repeat:no-repeat    means that extra image which used to fill the contain in not use again - means single full photo  */
+
+}
+
+/* by-default we have/use without decalre is auto -like extra inlarge size */
+#auto {
+    background-image: url("/assets/4.jpg");
+    background-size: auto;
+    /* auto means by-default size , not in use in css , mostly only we use cover -little inlarge to fit in screen */
+}
+
+a {
+    display: block;
+    background-color: #10b223a1;
+    width:80px;
+}

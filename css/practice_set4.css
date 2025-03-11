@@ -1,0 +1,38 @@
+/* create a website layout with a header.a footer and a content area containing 3 divs. set the height and width of divs of 100px(add the previous navbar inthe header) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav_container {
+    background-color: black;
+    height: 800px;
+}
+
+.nav_a {
+    display: inline-block;
+    margin: 10px 160px 0px 0px;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    /* line remove from anchor */
+}
+#header{
+    background-color: #a02424ab;
+    height:100px
+}
+
+#main {
+    height: 1000px;
+    background-color: rgb(70, 127, 178);
+    color: aliceblue
+}
+
+#footer {
+    height: 100px;
+    background-color: rgb(81, 98, 100);
+    color: aliceblue
+}
+
+/* qn2 add border to all the div in horizontal having border-radius corner with margin equally */

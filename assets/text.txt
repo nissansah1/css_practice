@@ -64,11 +64,27 @@ when you do code
 use dfa concept in paper pen and then apply needed to connected path 
 
 
+The percentage unit (%) in CSS is used because it allows the size or position of an element to adjust proportionally when the screen size or browser window changes. It makes the layout more responsive by shifting or resizing elements relative to their parent container or viewport
+
+
+
 git push second time
 {
-git init
+# Fetch the latest changes from the remote repository
+git fetch origin
+
+# Merge remote changes with your local branch
+git pull origin main --rebase
+
+# Add all changes again
 git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/nissansah1/css_practice.git
-git push -u origin main
+
+# Commit the changes
+git commit -m "Updated files"
+
+# Push the changes forcefully if necessary (use carefully)
+git push -u origin main --force
+
 }
+
+unsplash.com - used fro downlaod copyright free photos 

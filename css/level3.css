@@ -1,0 +1,66 @@
+/* absolute value means fix value <for every laptop> - not changeable with browser size changes
+
+mostly use nowadays in px 
+but you can also you use cm, mm etc*/
+
+/*
+relative means cchangeable -it change size alc to diff laptop
+
+mostly use nowadays in % but you can also you use em , rem 
+*/
+
+/*
+remember in relative , percentage - it size is relativeable to an parent><child object 
+matlab agar parent ka size 100% ahi to unke child pe 33% apply hoga . eg:- 
+div1 <100%>
+    div2   <33%>
+    /div2
+div1
+*/
+
+#parent {
+    height: 100%;
+    width: 100px;
+    background-color: rgb(40, 122, 122)
+}
+
+#child {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(88, 51, 134)
+}
+
+/*width: 100%;
+makes the element cover the entire width of the browser or its parent container. height: 100%;
+makes the element cover the entire height of the browser or its parent container.*/
+
+/* it measns agar oarent jitna px ka hoga utna portion of percentage apply hoga */
+
+/* 1em means one time of its oarent class
+eg: */
+
+#box1 {
+    width: 100px;
+    background-color: blue;
+    font-size: 10px;
+}
+
+#box2 {
+    width: 2em;
+    background-color: blue;
+    font-size: 2em;
+    /* here you see it increaseby twoo times of parent class for font size */
+    width:5em;
+    /* it means it increased by 5 times of it own font-size */
+}
+
+/* wtihout any tag ,under body it bydefault font size is 16px */
+
+#rem{
+    width:5rem;
+}
+/* rem is basically used fro font sixe of the root elememt  */
+
+/* Others
+ vh: relative to 1% viewport height 
+vw: relative to 1% viewport width */

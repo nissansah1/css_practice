@@ -1,0 +1,219 @@
+/* ek contaainer pe child container ko kaise arrange kare ... in aspect to row and column , thats way flecbox used for better layout of container box eg/;- navbar , product detain with image type box like in myntra */
+
+/* parent container is called flex coantainer 
+display :flex -- by using this flex container is declared
+
+bydefault 
+row - main axis     [you can alter this one tag ]
+column- cross axis */
+
+/* Cross-axis ka matlab: 
+Agar flex-direction: row ho;
+-to cross-axis vertical (column) hoga. Agar flex-direction: column ho;
+- to cross-axis horizontal (row) hoga. */
+
+* {
+    text-align: center;
+}
+
+/* apply for both parent and child div  */
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+
+}
+
+/* override the parent div here of width and height*/
+#parent_container {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    /* flex decalre in parent container , so - child elements ko arrange aur align karna. Flexbox ek tarika hai jo child elements ko horizontally ya vertically flexibly position karne me madad karta hai. 
+    now . it give you access to arragne the child container*
+    
+    flex pe child container always  compress or suspress bcz to fit in parent container --even you declare height and width of child container is highr or low
+    also, upto one max limit then it stop to compress eg:- not compress  more than font size */
+
+}
+
+#box1 {
+    background-color: rgba(255, 174, 0, 0.581);
+}
+
+#box2 {
+    background-color: rgba(132, 255, 0, 0.494);
+}
+
+#box3 {
+    background-color: rgba(0, 195, 255, 0.497);
+}
+
+#box4 {
+    background-color: rgba(255, 0, 166, 0.533);
+}
+
+#box5 {
+    background-color: rgba(255, 0, 0, 0.465);
+}
+
+/* flexbox -direction use hota hai to placed flex(child) conrtainer , with respect to axix se aaur direction se 
+ eg:-
+ • flexbox-direction: row;
+ (default)  //left - right direction pe hoga
+ • flexbox-direction: row-reverse;      //right-left direction pe hoga 
+ • flexbox-direction: column;
+ • flexbox-direction:column-reverse;
+ 
+ by default flexbox direction :row pe rahate hai , means no change kyo ki pehile se he row pe set hota hai  */
+
+/*switch 
+case1 - left>>>>right>>>>>> (direction)  row -bydefault set 
+case2 - <<<right<<<<<left<< (direction)   row-reverse
+case3 - <up to down> pe child container set hoga (top - bottom)
+case4 - down (start) to up (end) pe child container set hoga (bottom-top)
+*/
+
+/* to view flex direction --set any case in last to apply that flex -direction */
+#parent_container {
+    flex-direction: row-reverse;
+    /* case 2 -  // <<right<<left direction pe hoga  */
+}
+
+#parent_container {
+    flex-direction: column;
+    /* case 3 - // up to down pe child container set hoga (top - bottom ) */
+}
+
+#parent_container {
+    flex-direction: column-reverse;
+    /* case 4 -  // down (start) to up (end)  pe child container set hoga (bottom-top)*/
+}
+
+#parent_container {
+    flex-direction: row;
+    /* case 1 -  (default) // >>left>>right >> direction pe hoga */
+}
+
+
+/* justify-cintent:va;ignment a;pmg the main /cross-axis 
+
+jsutify-content: flex-start / flex-end / centre / spacce-evenly /spce-around / space-between
+
+justify-content is direction change nahi hoata hai bass allignment change hota hai 
+
+justify- content use karke aap child container ko align/position shift karsakte ho ya unke bich pe equal gap de sakte ho */
+
+#parent_container {
+    flex-direction: row;
+    /* aab justify allignment row ke ratio pe hoga */
+    justify-content: flex-start;
+    /* by-default left side sequesnce pe align/position hoga  */
+
+    justify-content: center;
+    /* aab saara chilkd container certer pe align/position pe hoga  */
+
+    justify-content: flex-end;
+    /* aab saara child container right taraf shift align/position pe hoga */
+
+    justify-content: space-around;
+    /* equally spce distribute karna hai between all the child container where start and end container ka space <equal space ka half hoga> */
+
+    justify-content: space-between;
+    /* equally space distribute karna hai between all the child container where start and end container ka space nahi hota hai .... means start=0px and end=0px; */
+
+    justify-content: space-evenly;
+    /* equally spce distribute karna hai between all the child container where start and end container ka space me bhi <equal space > distribute hoga  */
+
+
+
+}
+
+#parent_container {
+    height: 700px;
+    flex-direction: column;
+    /* aab justify allignment column ke ratio pe hoga */
+
+    justify-content: flex-start;
+    /* by-default top side sequesnce pe align/position hoga  */
+
+    justify-content: center;
+    /* aab saara chilkd container certer pe align/position pe hoga in vertical(column) view */
+
+    justify-content: flex-end;
+    /* aab saara child container bottom  taraf shift align/position pe hoga in vertical(column) view*/
+
+    justify-content: space-around;
+    /* equally spce distribute karna hai between all the child container in vertical(column) way where top and buttom container ka space <equal space ka half hoga> */
+
+    justify-content: space-between;
+    /* equally space distribute karna hai between all the child container in vertical(column) way where top and bottom container ka space nahi hota hai .... means top=0px and bottom=0px; */
+
+    justify-content: space-evenly;
+    /* equally spce distribute karna hai between all the child container in vertical(column) way where top and bottom  container ka space me bhi <equal space > distribute hoga  */
+
+}
+
+/* mostly ....we used display-flex,flex-direction, justify-content  to set container  */
+
+/* Cross-axis par alignment ke liye sirf <align-items >property use hoti hai. <justify-content> property toh main-axis ke alignment ke liye use hoti hai. */
+
+/* align-content - Yeh sirf multiple lines (flex-wrap hone par) ke beech ka gap adjust karta hai. Agar sirf ek line hai ya flex-wrap nahi hua hai,
+toh align-content kaam nahi karta, gap maintain karne ke liye kaam aata hai 
+
+align-content mostly  work in multpile line  container ......little less work in single row ccontainer 
+
+for that purpose - flex-wrap is used to make multi row/column line container */
+
+/* align-items space ko adjust nahi karta. Yeh sirf cross-axis par items ko align karta hai,
+jaise: 
+flex-start (upar)
+flex-end (niche)
+center (beech me)
+stretch (puri space me faila deta hai)
+baseline (text ki baseline par) */
+
+/*inshort version: 
+align-content: Rows ke beech space distribute karne ke liye (cross-axis par). ----
+align-items: container items ko cross-axis par align karne ke liye. ||||
+*/
+
+#parent_container {
+    height: 400px;
+    width: 400px;
+
+    /* collaspe the parent container height and width  , so then child container must have to wrap(another line row shifting )  */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex wrao is similar to vs-word wrap when size decrease ....word shift too another row line   */
+
+    /* flex-wrap: nowrap; */
+    /* when we set nowrap then it make chile=ld container to shift forcewfully in single row/column even if it not able to shift in oner row ....ntlb wrap hone nahi dena hai  */
+
+    /* flex-wrap: wrap-reverse; */
+    /* flex wrao is similar to vs-word wrap when size decrease ....word shift too another row line  but where it juts opposite of row means .....parent contqainer ke bottom se start hoga .....box imfo vhi reverse se represent hoga  */
+}
+
+#parent_container {
+    /* align-items:center ; */
+
+    align-content: center;
+}
+
+
+/* Common Values: 
+= flex-start- Start par align karta hai. 
+= flex-end - End par align karta hai. 
+= center - Beech me align karta hai. 
+= space-between - Beech be equal gap deta hai. = space-around - Har element ke charo taraf equal gap deta hai. 
+= space-evenly - Har element ke beech aur dono side me equal gap deta hai. 
+= stretch (sirf align-items aur align-content me) - Available space ko pura fill karta hai. 
+
+Difference: 
+= justify-content: Main axis (horizontal) par alignment karta hai. 
+= align-items: Cross axis (vertical) par alignment karta hai (single line). 
+= align-content: Cross axis par alignment karta hai,
+lekin multiple lines (flex-wrap) ke saath. */
+
+/* flex -item is used to give child container - position  */

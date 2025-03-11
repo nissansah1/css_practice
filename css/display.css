@@ -1,1 +1,106 @@
- /* inkine takee only that must spce the box needed of that  particular tag  */
+ /* inkine takee only that must spce the box needed of that  particular tag  , not take all part of horizontal space like in-block
+ 
+ block - it take all part of horizontal invisible space
+ <100% width taken>
+  
+ eg:- example of inlinr element are
+  
+ example of in-block  element are
+
+ but you can manupulate it with display sand box css element
+
+   means inline take - limited box spa ce
+   block - it take all space 100% width 
+
+   
+ */
+ a {
+     background-color: rgb(138, 247, 180);
+ }
+
+ #before_manu_div_inblock_to_inline {
+     background-color: aqua;
+ }
+
+ #before_manu_butttom_inline_to_block {
+     background-color: rgb(7, 188, 128);
+ }
+
+ #after_manu_div_inblock_to_inline {
+     background-color: aqua;
+     display: inline;
+     /* now the block can change into inline 
+     
+     drawback of inline is that you can set the margin and padding  in inline display*/
+ }
+
+ #after_manu_butttom_inline_to_block {
+
+     background-color: rgb(7, 188, 128);
+     display: block;
+     /* now you can see inline block change into block , it occupy space - it take all width  */
+ }
+
+ /* to reduce the dreawback of inline element we use inline-block display  to set margin and apdding(top bottom )  mannualy*/
+
+ #set_padding_margin_mannually_using_inline_block {
+     height: 100px;
+     width: 400px;
+     background-color: burlywood;
+     margin: 20px;
+     padding: 20px;
+     display: inline-block;
+     /* now this block display is inline-block , you set amnnually margin and padding <.top and buttom> and you can set height and weight*/
+ }
+
+ .navbar {
+     background-color: black;
+     height: 40px;
+ }
+
+ .pra_1_make_navar_like_box {
+     height: 18px;
+     width: 50px;
+     margin-right: 15%;
+     margin-left: 12%;
+     margin-top: 8px;
+     display: inline-block;
+     color: white;
+     background-color: rgb(60, 76, 76);
+ }
+
+ #hide_it {
+     display: none;
+     /* here you can see it is totally hide because the display is none means nothhing to display and take no place in browser */
+ }
+
+ #visibility_hidden {
+     visibility: hidden;
+     /* here you can see it is totally hidden because the visibility is hidden means nothhing to display and but it takr place/reserved   in browser */
+ }
+
+ .box_like_hr_display {
+     height: 100px;
+     width: 140px;
+     margin: 40px;
+     padding: 20px;
+
+     display: inline-block;
+     background-color: rgb(165, 59, 59);
+ }
+
+ #opacity_set_in_color_1 {
+     background-color: rgba(88, 13, 13, 0.3);
+     /* rgba where a is alpaha channel means set opacity from 0-1 range <visibility color> 
+     where 0.3 is lighter transparent color*/
+ }
+
+ #opacity_set_in_color_2 {
+     background-color: rgba(88, 13, 13, 0.6);
+     /* <visibility color>where 0.6 is  translusent color*/
+ }
+
+ #opacity_set_in_color_3 {
+     background-color: rgba(88, 13, 13, 0.9);
+     /* <visibility color>where 0.9 is  opacity color*/
+ }

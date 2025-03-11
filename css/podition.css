@@ -1,0 +1,150 @@
+/* postition matlab uska place kaha pe hoga of any tag , eg h, p ,div etc  */
+/* 
+ • static - default position (The top, right, bottom, left, and z-index properties have no effect) 
+ • relative - element is relative to itself. (The top, right, bottom, left, and z-index will work) 
+ • absolute-positioned relative to its closest positioned ancestor. (removed fro) 
+ • fixed - positioned relative to browser. (removed from flow) 
+  • sticky - positioned based on user's scroll position*/
+
+/* remember % unit used hota hai screen ke proportionally cahnge hone se  .it allows the size or position of an element to adjust proportionally when the screen size or browser window changes */
+
+#position1,
+#position2,
+#position3,
+#position4,
+#position5 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 4px;
+
+}
+
+#position1 {
+    position: static;
+    /* browser screen se that tag box ka ,distance kitna hona chaiye */
+    top: 5px;
+    /* browser screen se that tag box ka ,from top distance kitna hona chaiye */
+    left: 30px;
+    /* browser screen se that tag box ka ,from left distance kitna hona chaiye */
+    right: 10px;
+    /* browser screen se that tag box ka ,from right distance kitna hona chaiye */
+    bottom: 30px
+        /* browser screen se that tag box ka from bottom distance kitna hona chaiye */
+}
+
+/* but static pe koi change nahi hoga because bydefault browser static position use karta hai  */
+
+#position2 {
+    position: relative;
+    /* relativev position means-, now position shift from its previous declare position --mtlb jaha pehile se declare tha -base on that place it shift  */
+    top: 30px;
+    /* actual before position se , top xxpx down hona  */
+    left: 20px;
+    /* actual before position se , toleft  xx px left  hona  */
+    /* right:30px;
+    bottom:10px; */
+    /* same concept like above one */
+}
+
+/* note , yeh overlap karta hai dusre tag ko */
+
+#position3 {
+    /* absolute means -it earliest anster se position chage hoga where body(means whole browser ) is the earliest anstestor */
+    position: absolute;
+    /* browser screen se(body tag se ) that tag box ka ,distance kitna hona chaiye */
+
+    /* "In CSS, position: absolute; changes the position of an element relative to its nearest positioned ancestor | parent ansestor . If there is no positioned ancestor, it will be relative to the browser window (viewport)." */
+
+    top: 150px;
+    /* browser screen se that tag box ka ,from top distance kitna hona chaiye */
+    left: 30px;
+    /* browser screen se that tag box ka ,from left distance kitna hona chaiye */
+    right: 10px;
+    /* browser screen se that tag box ka ,from right distance kitna hona chaiye */
+    bottom: 30px
+        /* browser screen se that tag box ka from bottom distance kitna hona chaiye */
+}
+
+/* in absolute , it change the position respect to browser screen bcz it is not  static. yeha  change  hoga because 
+
+note,
+yeh overlap karta hai dusre tag ko... moslty static positioin abla ko */
+
+#position4 {
+    position: fixed;
+    /* fixed matlab - browser screen se that tag box ka,
+        distance kitna hona chaiye>>
+        aaur yeh fixed hota hai means screen scroll akrne ke baad bhi box ka position change nahi hoga eg:- fixed navbar, fixed footer etc */
+    width: 100%;
+    height: 14px;
+    top: 0px;
+    /*  set the four side fixed postion */
+    left: 0px;
+}
+
+#position5 {
+    position: sticky;
+    /* stricky position means it is same as fixed position only when it come upto its scroable time then it fixed in that time  */
+    top: 0px;
+    /* when it scroable and touch that box in top , then it fix (top:0px) */
+}
+
+/* stricky used for nav bar and herader or oder/option click whick are in below */
+
+#long_page {
+    height: 5000px;
+    /* how this make the page scroable */
+}
+
+/* z-index means control  overlapping  mannually if it over into another tag/box
+
+remember pehile bala box overlapping pe under hota hai 
+wahi baad me aane bala box upper<front> pe rahwta hai 
+order based overlapping is set 
+
+by default all have z-index is zero
+mannualy set
+z-index : 1,2,3 + .... increase the positive no. means higher canche of overlapping/placed <front> is there
+
+z-index : -1,-2,-3 -.... decrease the nengative no. means higher canche of overlapping/placed <backside>is there
+
+also , in static position or no any position we cannot used z_index , top , buttom , left, right 
+
+this conceept come from mathematical graph concept x-axis , y-axis and z-axis */
+
+#z_index1,
+#z_index2,
+#z_index3 {
+    height: 2%;
+    width: 10%;
+    background-color: rgb(187, 128, 128);
+    margin: 2px;
+    border-radius: 2px solid black;
+    display: inline-block;
+    position: relative;
+    /* relative se matlab root anstestor se cahnge the position */
+    top: 200px;
+    left: 0px;
+    /* now ,here saare box ka z_index value 0 pe hai  */
+}
+
+#z_index1 {
+    left: 50px;
+    top: 140px;
+    background-color: #875284;
+    z-index: 2;
+    /* aab yeh overlapping karke front pe aaya hai box */
+}
+
+#z_index3 {
+    left: -15px;
+    top: 140px;
+    background-color: #6c7696;
+    z-index: -1;
+    /* aab yeh box overlapping karke backside gaya hai  */
+}
+
+/* remenber , giving - sign in px value react opposite of it  work/set/direction_set eg:- position-relative:-20px  means Moves the element up., not down from the actual position/screen  ,alos it apply in all px value set of all css element  */
