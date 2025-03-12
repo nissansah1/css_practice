@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+}
+
+/* parent container of flex child container  */
+#nav_parent_container {
+
+    background-color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    /* moslty yeh bydefault single line pe aane kosis karega , inka kaam ek line me ya arrange karna aur alignment aur spacing ko control karna hai. */
+    justify-content: space-evenly;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+li {
+    list-style-type: none;
+    /* list-style-type is used to remove ul dot from text */
+}
+
+#par_box {
+    margin: 20% 40% ;
+    height: 400px;
+
+    width: 400px;
+    background-color: rgba(1, 251, 30, 0.444);
+    display: flex;
+    align-items: center;
+    /* used for vertical align  */
+    justify-content: center;
+    /* used for horizontal align */
+}
+
+#chi_box {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(22, 1, 251, 0.444)
+}

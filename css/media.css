@@ -1,0 +1,94 @@
+/* @media(min/max-width:600px){
+elemment,id,class{
+    //element css apply 
+    eg:- bgc:red;
+}
+when width:xxxpx is reach above/below, 
+then it chasnge , when it reach above/below   thEN that much width -- device dimension - change automatically
+*/
+
+#div_media {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+/* mostly we use width rather than height bcz this is inpractical in real life , mbl screen depend upon width --not height  */
+@media (min-width: 1400px) {
+    #div_media {
+        background-color: rgb(0, 34, 255);
+    }
+
+    /*min means -  when it reach up than minimum width size  of that --then width is apply under this media css element style  */
+}
+
+@media (max-width: 400px) {
+    #div_media {
+        background-color: rgb(43, 255, 0);
+    }
+
+    /*max means -  when it reach below  than max  width size  of that --then width is apply under this media css element style  */
+}
+
+/* inshort 
+min pe - agar width size min width se zaada hoga to,under ka medai css ekement style apply kardena 
+
+max pe - agar width size max width se kaam hoga to ,,
+under ka media css ekement style apply kardena*/
+
+/* remember agar min amd max ko define kiya hai to ,remaining gap of the width pe bydefault css apply hoga */
+
+/* mostly use in font-size and many other things  */
+
+
+#both_media {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 159, 0);
+}
+
+/* limited width pe bhi set kar sakte hai by applying both min and max */
+@media (min-width: 900px) and (max-width: 1200px) {
+    #both_media {
+        background-color: rgb(221, 0, 255);
+    }
+}
+
+/* 
+Practice Set 7 div 
+Qs: Add a media query to implement the following: */
+#pr7 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(5, 9, 0);
+}
+
+/* the color of a div changes to green for viewport width less than 300px */
+@media (max-width:300px) {
+    #pr7 {
+        background-color: green;
+    }
+}
+
+
+/* • ② the color of a div changes to pink for width between 300px & 400px */
+@media(min-width:300px) and (max-width:400px) {
+    #pr7 {
+        background-color: pink;
+    }
+}
+
+
+/* • the color of a div changes to red for width between 400px & 600px */
+@media(min-width:400px) and (max-width:600px) {
+    #pr7 {
+        background-color: rgb(203, 10, 42);
+    }
+}
+
+/* • the color of a div changes to blue for width above 600px */
+@media(min-width:600px) {
+    #pr7 {
+        background-color: blue;
+    }
+}

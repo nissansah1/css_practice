@@ -184,7 +184,7 @@ align-items: container items ko cross-axis par align karne ke liye. ||||
     width: 400px;
 
     /* collaspe the parent container height and width  , so then child container must have to wrap(another line row shifting )  */
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     /* flex wrao is similar to vs-word wrap when size decrease ....word shift too another row line   */
 
@@ -195,10 +195,13 @@ align-items: container items ko cross-axis par align karne ke liye. ||||
     /* flex wrao is similar to vs-word wrap when size decrease ....word shift too another row line  but where it juts opposite of row means .....parent contqainer ke bottom se start hoga .....box imfo vhi reverse se represent hoga  */
 }
 
+/* idk chatgpt say wrong */
 #parent_container {
-    /* align-items:center ; */
-
     align-content: center;
+    /* yeh align with without gap ko shift karne ka kaam karta hai (row - horizontal and col- vertical) */
+
+    align-items: flex-start;
+    /* yeh align with  gap ko shift karne ka kaam karta hai (row - vertical and col- horizontal) */
 }
 
 

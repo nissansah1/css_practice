@@ -1,0 +1,35 @@
+/* Practice Set 8
+ Qs: Create a simple loader using CSS 
+ 
+ Step1: create a div with circular shape & a thick border from one end (top/bottom/left/right) 
+ 
+ Step2: To make it spin create an animation which transforms it from Odeg to 360deg 
+ 
+ Step3: Add the animation property to the loader with infinite durati */
+
+@keyframes spines {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(3600deg);
+    }
+}
+
+
+#loader {
+    height: 100px;
+    width: 100px;
+    border: 20px solid rgb(172, 96, 96);
+    /* now here border apply in all side */
+    border-top: 20px solid rgb(64, 57, 57);
+    /* it means border only top pe apply hoga  */
+    border-radius: 50%;
+    animation: spines;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+} 

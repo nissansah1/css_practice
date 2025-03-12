@@ -1,0 +1,68 @@
+/* sckew mtlb box ka corner pakadke , kichna hota hai   */
+
+
+
+#skew1,
+#skew2,
+#skew3,
+#skew4,
+#skew5 {
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    font-size: large;
+    ;
+
+}
+
+#skew1 {
+    background-color: red;
+    transform: skew(45deg);
+    /* skew mtlb, corner ko pakad ke, koona se khichna huwa  */
+}
+
+#skew2 {
+    background-color: purple;
+}
+
+#skew2:hover {
+    background-color: yellow;
+    transition: all 2s ease;
+    transform: skew(80deg);
+    /* jab hover hoga tab box, tag ,anything khichega (xx deg) tak  
+    
+    remember bydefault yeh x axis pe khichega */
+}
+
+#skew3 {
+    background-color: rgb(89, 69, 69);
+}
+
+#skew3:hover {
+    transition: all 2s ease;
+    transform: skew(-80deg);
+    /* jab hover hoga tab box,tag,anything khichega with respect to -x asis , aaur (xx deg) tak */
+}
+
+#skew4 {
+    background-color: rgb(8, 205, 28);
+}
+
+#skew4:hover {
+    transition: all 2s ease;
+    transform: skewY(80deg);
+    /* jab hover hoga tab box,tag,anything khichega with respect to y asis , aaur (xx deg) tak */
+}
+
+#skew5 {
+    background-color: rgb(11, 8, 205);
+}
+
+#skew5:hover {
+    transition: all 2s ease;
+    transform: skewY(-80deg);
+    /* jab hover hoga tab box,tag,anything khichega with respect to -y asis , aaur (xx deg) tak */
+}
+
+
+/* remember container ke aander ka content vhi , khichega  */

@@ -1,0 +1,209 @@
+/* animation is work like function where you define  , the css style <from and to> ,then it change after fiunction call*/
+
+/*
+
+@keyframe <ani_fun_name> {      //suntax 
+    from {                      //starting animation
+        css element         
+    }
+    to {                    //ending animation
+        css element
+}
+ */
+
+/* animation function  */
+@keyframes moveL_R {
+    from {
+        background-color: rgb(116, 91, 91);
+    }
+
+    to {
+        background-color: rgb(222, 140, 140);
+    }
+}
+
+/* you can add more css element in animation function */
+@keyframes move_direction {
+    from {
+        left: 0px;
+
+    }
+
+    to {
+        left: 200px;
+        background-color: lightpink;
+    }
+}
+
+
+
+
+#animation,
+#animation1,
+#animation_move_dir_normal,
+#animation_move_dir_reverse,
+#animation_move_dir_alternate,
+#animation_move_dir_alternate_reverse,
+#animation_move_shorthand {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 40px;
+    font-size: larger;
+}
+
+#animation {
+    animation-name: moveL_R;
+    /* yeh parameter pass jaise ho gaya , means i call <moveL_R> function animation and, use in this box*/
+
+    animation-duration: 4s;
+    /* function animation hone mei, kitna time lagega  mtlb kitna time tak animation chalega */
+
+    animation-timing-function: ease;
+    /* animation function pe kaun sa filter/effect use hoga */
+
+    animation-delay: 0.5 s;
+    /* animation delay mtlb - kitna time baad animation start hoga  ,
+    
+    remember - duration se less than time hona chaiye , delay pe */
+
+    animation-iteration-count: 3;
+    /* islka mtlb hai kitna time tak animation repeat hoga  */
+
+}
+
+/* blink animation  */
+#animation1 {
+    border-radius: 45%;
+    animation-name: moveL_R;
+    animation-duration: 0.25s;
+    /* duration kaam karnse , blink nlink color hoga  */
+
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* iteration count - infinite karne se non-stop animation function chalta rahega */
+}
+
+/* animation direction- means kaun sa direction pe chalega like left to right   ,    right to left,    vice versa etc
+
+=normal - Animation pehle se last tak chalega (default). 
+=reverse - Animation ulta chalega, yaani last se pehle tak.
+=alternate - Animation pehle normal chalega,phir reverse (loop me). 
+=alternate-reverse - Animation pehle reverse chalega phir normal (loop me)
+*/
+
+/* common define for all id , for direction setup!!! */
+#animation_move_dir_normal,
+#animation_move_dir_reverse,
+#animation_move_dir_alternate,
+#animation_move_dir_alternate_reverse {
+    position: absolute;
+    /* aniamtion-direction karne ke liye , pehile position set karna padta hai */
+    animation-name: move_direction;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#animation_move_dir_normal {
+    left: 200px;
+    background-color: purple;
+    animation-direction: normal;
+    /* yeha pe animation normal - left to right taraf jaiga*/
+}
+
+#animation_move_dir_reverse {
+    top: 600px;
+    background-color: rgb(181, 70, 81);
+    animation-direction: reverse;
+    /* yeha pe animation reverse pe chalega  - means right to left  taraf jaiga*/
+}
+
+#animation_move_dir_alternate {
+    top: 800px;
+    background-color: rgb(66, 128, 0);
+    animation-direction: alternate;
+    /* yeha pe animation altermate pe chalega  - pehile left to right and loop taraf jaiga*/
+}
+
+#animation_move_dir_alternate_reverse {
+    top: 1000px;
+    background-color: rgb(184, 161, 9);
+    animation-direction: alternate-reverse;
+    /* yeha pe animation altermate-reverse pe chalega  - means pehile right toleft  and loop taraf jaiga*/
+}
+
+#animation_move_shorthand {
+    position: absolute;
+    top: 1200px;
+}
+
+/* Animation Shorthand
+ 
+ animation:animation_name  | duration | timing-function  | delay | iteration-count   | didrection;   */
+
+#animation_move_shorthand:hover {
+    animation: move_direction 2s ease 0s infinite normal;
+}
+
+/* you can also add hover in animation , of that animation box */
+
+
+/* aap , animation pe ,itne % ccomplete hone par dusra css element lagado ,then fir itna % hone par another css element lagado , then fir itna % hone par fir another css element lagado ...till , % upto 100% */
+/* % in Animation @keyframe myName {
+    0% {
+        font-size: 20px;
+    }
+
+    50% {
+        font-size: 30px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+} */
+
+/* here, diff css element apply , alc to compete the position of their percentages */
+@keyframes animation_percent_movement {
+    0% {
+        left: 0px;
+        background-color: orange;
+    }
+
+    /* after 25% work/distance comlete ,then this css element apply */
+    25% {
+        left: 100px;
+        background-color: rgb(17, 255, 0);
+    }
+
+    /* after 50% work/distance comlete ,then this css element apply */
+    50% {
+        left: 200px;
+        background-color: rgb(76, 0, 255);
+    }
+
+    /* after 100% work/distance comlete ,then this css element apply */
+    100% {
+        left: 400px;
+        background-color: rgb(255, 0, 128);
+    }
+}
+
+
+#animation_move_percentage {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    position: absolute;
+    top: 1400px;
+
+    /* animation first call and working_define */
+    animation-name: animation_percent_movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}

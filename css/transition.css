@@ -1,0 +1,152 @@
+/* transition means applying effect/changes from one state to another state means ek time ke baad  ya action ke baad kuch change hona */
+
+#flex_box {
+    height: 200px;
+    width: 800px;
+    background-color: purple;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+
+}
+
+#transition_div,
+#transition_div_act,
+#transition_div_foc {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+
+}
+
+/* pseudoclass --means defaining transition calss mtlb kya karne se kya transition hoga eg: */
+
+
+#transition_div:hover {
+    background-color: yellow;
+    text-transform: uppercase;
+    /* hower means when pointer go to this box then ,this css emelment style is apply  , means it change the transition */
+}
+
+#transition_div_act:active {
+    background-color: rgb(100, 90, 156);
+
+    /* activev mtlb agar hum uss box, tag pe click ya click with hold kare, only then yeh bala css element style apply ho , aaur jaab click with hold relaease xorde , then fir se bydefault css style apply ho  */
+}
+
+input {
+    background: white;
+    /* bg is used to set background color */
+    height: 100px;
+    width: 800px;
+}
+
+/* focus - when the user interacts with an element through clicking,
+tapping,
+or keyboard navigation. It highlights the currently active or selected element,
+improving usability and accessibility.
+eg:- Input Elements,Buttons,Links,Textarea,
+etc */
+
+/* means focus is used to link,
+input ....means user input interactive action based work, it apply focus */
+#a_focus:focus,
+input:focus {
+    background-color: rgba(153, 205, 50, 0.238);
+
+}
+
+
+#anchor_tag_id:target {
+    background-color: yellow;
+    /* yeah ek "#_id_anchor" ka link hai means agar tum link ke plick karte ho kuch transition effect/changes hoga   */
+}
+
+#transition_div {
+    transition-property: all;
+    /* transition property pe all set karne se, aab mai in pe effeft/change ko costumize kar sakta hu */
+
+    /* if tum transition-property pe koi css element indicate kar dete ho , then wahi elament effect pe change hoaga, bass eg:transition-property: font-size;
+    aab iska means huwa bass fontsize change akrna hai */
+    transition-duration: 4s;
+    /* transition - duration se aap kisi bhi effect/changes pe timing laga sakte ho , yyani effect kitne time me complete hoga.  */
+    transition-timing-function: steps(3);
+    /* transition-timing-function se aap aapne ,timing duration, aap filter effect/cjhanges laga sakte ho ... like transition kaise aana chaiya , like capcut ke video pe filter use karte hai , waise he */
+}
+
+/* 🔥 Transition Timing Functions (Hinglish): 
+
+ease - Start slow,phir fast,aur end pe slow (Default effect)
+ eg:- Jaise video me slow se fast zoom-in aur phir slow-out. 
+
+linear - Constant speed,ekdum smooth transition.
+ eg:- Jaise video me ekdum plain smooth movement,bina koi speed change.
+ 
+ease-in - Pehle slow start,phir fast ho jata hai. 
+eg:-  Jaise CapCut me slow zoom-in effect. 
+ 
+ease-out - Start me fast,end me slow.  
+eg:- Jaise smooth fade-out effect video me. 
+
+ease-in-out - Start aur end dono slow,beech me fast. 
+eg:- Jaise cinematic feel me slow se fast aur phir slow-out. 
+
+steps(3) - Transition ko 3 steps me divide karta hai,
+eg:- ekdum jumpy ya glitch effect. Jaise glitch filter laga ho CapCut me */
+
+#transition_div_linear,
+#transition_div_shorthand,
+#transition_div_ease {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+#transition_div_linear:hover {
+    background-color: yellow;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    /* smoothly transition ho  */
+    transition-delay: 4s;
+    /* means translation hone me xs ke baad effect/changes apply hona ...yani kitni der ke baad effect dikhna shuru ho. */
+}
+
+#transition_div_ease:hover {
+    background-color: rgb(32, 159, 244);
+    font-size: large;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    /* Start slow,phir fast,aur end pe slow (Default effect) hai yeh  */
+    transition-delay: 1s;
+}
+
+#transition_div_shorthand {
+    background-color: rgb(158, 99, 99);
+    transition: background-color 3s steps(5) 1s;
+    /* transition:property|duration|timing-function|delay    */
+
+}
+
+/* remember , when some action is perform , like hover,focus,trget etc ,then the transition is apply */
+
+
+
+/* < !-- grid container -yt video se sikhna padega --> */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,159 @@
+/* transform means rotate karna , bada karna , chota karna 
+
+-Used to apply 2D & 3D transformations to an element • rotate    (360 degree )
+unit is radian and degree, but we mostly use degree , almost time
+transform: rotate(45deg);
+rotate: 45deg;
+rotateX: 45deg;
+rotateY: 45deg;
+rotateZ: 45deg;*/
+
+#container {
+    background-color: rgba(10, 91, 242, 0.213);
+    display: flex;
+    width: 1200px
+}
+
+#box0,
+#box1,
+#box2,
+#box3,
+#box4,
+#box5_rotate {
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+
+    font-size: large;
+    text-align: center;
+}
+
+#box0 {
+    background-color: red;
+    transform: rotate(45deg);
+    /* transform is used to rotate the box ,in respect of xaxis and y-axis , also under the content of that rotate box , content-under that box also rotate  */
+}
+
+#box1 {
+    background-color: purple;
+    transform: rotate(90deg);
+    /* under content of box is also rotate */
+}
+
+/* you can also rotate , in x axis , y-axis,z-axis, it mosstly usred for 3d views  */
+
+#box2 {
+    background-color: yellow;
+    transform: rotateX(60deg);
+    /* here box is rotate only in x axis direction  */
+}
+
+#box3 {
+    background-color: orange;
+    transform: rotateY(45deg);
+    /* here box is rotate only in y- axis direction  */
+
+}
+
+#box4 {
+    background-color: orange;
+
+    /* here box is rotate only in z- axis direction  */
+    rotate: z 45deg;
+    /* and this is shortform to rotate the box, anythings  */
+
+}
+
+/* remember in xaxis and yaxis when rotate is 90 and 270degdeg, then is invisible bcz it is point horizontal /parallal to the browser screen */
+
+#box5_rotate {
+    background-color: paleturquoise;
+}
+
+#box5_rotate:hover {
+    background-color: brown;
+    transform: rotate(360deg);
+    transition: all 3s ease-in;
+    /* here it can rotate , only when hover is perform , mtlb jaab pointer box pe jaiga , taab he rotate hoga - with transition -control shorthand */
+
+}
+
+
+
+#scale_container {
+    background-color: rgba(10, 91, 242, 0.213);
+    display: flex;
+    width: 1200px;
+    height: 200px;
+}
+
+/* scale means - increase the size or decrease the size of box , other tag , any things*/
+#box_scale_scale2,
+#box_scale1,
+#box_scale3,
+#box_scale4,
+#box_scale5,
+#box_scale_hover {
+    margin: 50px;
+    height: 60px;
+    width: 60px;
+
+
+}
+
+#box_scale_scale2 {
+
+    background-color: gray;
+    transform: scale(2);
+    /* bydefault scale size is one , agar scale 2 times akrde , to yeah 2x times size pe increase hoga */
+    /* yeh x and y axis both side  ho raha hai , equally size cchota ya bada ho raha hai  */
+}
+
+#box_scale1 {
+
+    background-color: rgba(160, 8, 84, 0.597);
+    transform: scale(0.5);
+    /* bydefault scale size is one , agar scale 0.5 times karde , to yeah orginal size se half times size pe decrease hoga */
+    /* yeh x and y axis both side  ho raha hai , equally size cchota ya bada ho raha hai  */
+}
+
+#box_scale3 {
+
+    background-color: rgba(97, 8, 160, 0.597);
+    transform: scale(1, 2);
+    /*, agar scale (x, y) times karde , to yeah x axxis mei, xX time increase/decrease size hoga , 
+
+    aaur y axis mei,xy time increase/decrease size hoga
+     */
+    /* yeh x and y axismannualy size   ho raha hai , mannually size cchota ya bada ho raha hai  
+    
+    where x means width size and y means height size*/
+}
+
+#box_scale4 {
+    background-color: rgba(23, 160, 8, 0.597);
+    transform: scaleX(2);
+    /* yeha pe x axis pe matrai scale kiya hai , means width size increase / decrease hoga */
+
+}
+
+#box_scale5 {
+    background-color: rgba(24, 158, 254, 0.597);
+    transform: scaley(2);
+    /* yeha pe y axis pe matrai scale kiya hai , means height size increase / decrease hoga */
+
+}
+
+#box_scale_hover {
+    background-color: rgb(188, 71, 71);
+
+
+}
+
+
+#box_scale_hover:hover {
+    background-color: rgb(116, 102, 69);
+    transform: scale(2, 3);
+    transition: all 2s ease-in;
+    /* in this scale transform , yeh tab he apply hoga , jaab hum hower karenge , in  that box,tag */
+}

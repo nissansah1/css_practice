@@ -1,0 +1,89 @@
+* {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+
+}
+
+#parent_container {
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+
+/* align self:- means aap yeha pe "cross-axis" |||| in position:row  pe aap single child container ko cuerrnet position se unka align/position shift kar sakte ho  */
+
+/* align-self is more priority than align-item, align-content */
+#box1 {
+    background-color: rgba(255, 174, 0, 0.581);
+}
+
+#box2 {
+    background-color: rgba(132, 255, 0, 0.494);
+}
+
+#box3 {
+    background-color: rgba(0, 195, 255, 0.497);
+    align-self: center;
+    /* used for single child container - current position se vertically position shift karna   */
+}
+
+#box4 {
+    background-color: rgba(255, 0, 166, 0.533);
+}
+
+#box5 {
+    background-color: rgba(255, 0, 0, 0.465);
+    align-self: flex-end;
+}
+
+#parent_container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* remember when parent container is compress -all child try to fit in parent container by comress the height and width of all child classs */
+
+/* to fix this above onne -- we use flex-grow and flex-shrink
+
+where flex-greow - it increase x time ,size increase if container is increase.
+flex-shrink-  it decrease x time, size decrease if container is decrease.
+
+/* remember - if hum flex-shink/grow :0; set karde taab parent compress/suspress hone par that child container ka size change nahi hoga 
+
+Inshort:
+ flex-shrink: 0; → Size decrease nahi karega. 
+ flex-grow: 0; → Size increase nahi karega.
+*/
+
+#box1 {
+    flex-grow: 0;
+    /* now, it size is constant , not change - if it compress or suspress */
+}
+
+#box4 {
+    flex-shrink: 0;
+    /* now, it size is constant , not change - if it compress or suspress */
+
+}
+
+/* remember alc to parent container height &width --- child grow/shrink containder height/weight ratio is increase / decrease alc to ratio of parent  */
+
+#box2 {
+    flex-grow: 2;
+    /* now you see the width is more increase in ratio of parent width rather than height */
+}
+
+#box5 {
+    flex-shrink: 2;
+    /* if parent container is going to comress than box5 is compress5 times than its normal size */
+}
+
+/* remember - flex-grow - show their effect if box sixe is more/big than fit size (of all child container) 
+
+and flex-shrink - show their effect  if box sixe is less/small than fit size (of all child container)*/

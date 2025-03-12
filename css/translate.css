@@ -1,0 +1,103 @@
+/* translate mtlb move karna , original place se  with respect to ( +/- X-axis) and (+/- Y-axis) , means original plcae se , x and y -axis through , move karega  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#plus_xmove,
+#minux_xmove,
+#plus_ymove,
+#minus_ymove,
+#out_boundary_xmove,
+#x_and_y_corner {
+    height: 100px;
+    width: 100px;
+}
+
+#plus_xmove {
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+#plus_xmove:hover {
+    /* hover karne per action hoga  */
+    transition: all 4s ease;
+    /* hover action ko control karta hai */
+    transform: translateX(200px);
+    /* translate ka kaam hai move karna , yeha pe translate +x hai mtlb left to right jana hai , distance 200px only */
+
+}
+
+#minux_xmove {
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+#minux_xmove:hover {
+    transition: all 4s ease-in;
+    transform: translateX(-200px);
+    /* translate ka kaam hai move karna , yeha pe translate -x hai mtlb right to left jana hai , distance 200px only */
+
+}
+
+#plus_ymove {
+    background-color: burlywood;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+
+#plus_ymove:hover {
+    transition: all 4s ease;
+    transform: translateY(200px);
+    /* translate ka kaam hai move karna , yeha pe translate +y hai mtlb top to down jana hai , distance 200px only */
+}
+
+#minus_ymove {
+    background-color: rgb(105, 187, 64, 0.215);
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+#minus_ymove:hover {
+    transition: all 4s ease-out;
+    transform: translateY(-200px);
+    /* translate ka kaam hai move karna , yeha pe translate *- hai mtlb bottom to top jana hai , distance 200px only */
+}
+
+#out_boundary_xmove {
+    background-color: yellow;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+#out_boundary_xmove:hover {
+    transition: all 2s ease-out;
+    transform: translatex(-200px);
+    /* agar px screen se se kaam / ya jaada ho gaya , original position se  tab woh screen boundary se bahar nikal jaiga */
+}
+
+/* also hum translatr<move> x and y asix ke respect pe bhi karwa saktge hai , means corner vhi move kar sakte hai  */
+
+#x_and_y_corner {
+    background-color: rgba(17, 116, 231, 0.215);
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+
+#x_and_y_corner:hover {
+    transition: all 2s ease-out;
+    transform: translate(200px, 100px);
+    /* yeha pe x axiz corner pe 200px distance move karega , wahi , y axis pe 100px distance move karega 
+    
+    now both milke aab korner mover karega */
+}
+
+/* aaise he +x,-x with respect to +y,-y ke permutation and combination  se , 4 conrer pe move kar sakte hai */
